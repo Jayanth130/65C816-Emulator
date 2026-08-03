@@ -1,4 +1,4 @@
-# 6C5816 Emulator
+# 65C816 Emulator
 A WDC 65C816 emulator written in C++ with support for compiler-generated C programs, interactive debugging, and UART-based I/O.
 
 ## Requirements
@@ -55,7 +55,7 @@ Memory-mapped UART emulation:
 | `$FFD6` | Write a byte to transmit over UART |
 | `$FFD7` | Read UART status |
 
-### Halting
+## Halting
  
 Execution stops when the `STP` opcode is encountered.
 
@@ -68,11 +68,11 @@ Execution stops when the `STP` opcode is encountered.
 ## Example
 
 An example showing the complete workflow for compiling and running a C program is available in the
-[`Examples`](examples) directory.
+[`examples`](example) directory.
 
 ## Credits
 
-- [`Andrew Jacobs`](https://github.com/andrew-jacobs) 65C816 Emulator — studied as a learning reference for understanding the processor architecture and validating     instruction behavior.
+- [`Andrew Jacob's`](https://github.com/andrew-jacobs) 65C816 Emulator — studied as a learning reference for understanding the processor architecture and validating     instruction behavior.
 - Western Design Center (WDC) — creator of the W65C816 processor and official programming manuals used as the primary architectural reference.
 - All implementation in this repository was written independently.
   
